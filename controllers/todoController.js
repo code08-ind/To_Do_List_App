@@ -1,8 +1,7 @@
 let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
-// mongodb://localhost/todolist
-//mongodb+srv://aryan_08:rishu08032000%0A@todolist.kpeyb.mongodb.net/todolist?retryWrites=true&w=majority
-mongoose.connect("mongodb://localhost/todolist", {
+
+mongoose.connect("<|Insert Your Mongo DB Link|>"
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -14,8 +13,6 @@ let todoSchema = new mongoose.Schema({
 });
 
 let Todo = mongoose.model('Todo', todoSchema);
-
-//let data = [{ item: "To Drink Cold Drink" }, { item: "To Make Project" }, { item: "To Play Cricket" }];
 
 let urlencodedParser = bodyParser.urlencoded({ extended: false });
 
