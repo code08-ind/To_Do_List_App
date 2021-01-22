@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/todo_list.js"></script>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/business-office-icons/256/To-do_List-512.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://cdn2.iconfinder.com/data/icons/business-office-icons/256/To-do_List-512.png" alt="ToDo List"
+            width="80px" height="80px">
+    </div>
+    <div id="todo-table">
+        <form action="">
+            <input type="text" name="item" placeholder="Add New ToDo" required>
+            <button type="submit">Add ToDo</button>
+        </form>
+        <ul>
+            <% todos.forEach((list)=> { %>
+                <li>
+                    <%= list.item %>
+                </li>
+                <% }) %>
+        </ul>
+    </div>
+    <h4>Created By &copy; Aryan Garg @2021</h4>
+</body>
+
+
+</html>

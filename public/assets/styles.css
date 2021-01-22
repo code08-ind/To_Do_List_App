@@ -1,0 +1,90 @@
+body {
+  background: #0d1521;
+  font-family: tahoma;
+  color: #989898;
+}
+
+#todo-table {
+  position: relative;
+  width: 95%;
+  background: #090d13;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#todo-table form {
+  display: flex;
+  flex-direction: row;
+}
+
+#todo-table form:after {
+  margin: 0;
+  content: "";
+  display: block;
+  clear: both;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 20px;
+  background: #393d42;
+  border: 0;
+  float: left;
+  font-size: 20px;
+  color: #989898;
+  outline: none;
+}
+
+button {
+  padding: 20px;
+  width: 30%;
+  float: left;
+  background: #707070;
+  border: 0;
+  margin-left: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: arial;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+li:hover {
+  text-decoration: line-through;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+div.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container img {
+  margin: 20px 0;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
